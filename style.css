@@ -303,6 +303,8 @@ img {
 
 .experience-timeline {
   position: relative;
+  display: grid;
+  gap: 1.25rem;
   max-width: 900px;
   margin-left: 0.75rem;
   padding-left: 2rem;
