@@ -284,8 +284,7 @@ img {
   box-shadow: var(--shadow-soft);
 }
 
-.about-card,
-.experience-card {
+.about-card {
   padding: 2rem;
 }
 
@@ -302,18 +301,103 @@ img {
   color: var(--muted);
 }
 
+.experience-timeline {
+  position: relative;
+  max-width: 900px;
+  margin-left: 0.75rem;
+  padding-left: 2rem;
+  border-left: 2px solid #c9dcf7;
+}
+
+.experience-card {
+  position: relative;
+  padding: 1.75rem;
+  background: linear-gradient(145deg, #ffffff 0%, #f7faff 100%);
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 2rem;
+  left: -2.6rem;
+  width: 18px;
+  height: 18px;
+  border: 4px solid #f3f7ff;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px rgba(47, 124, 255, 0.2);
+}
+
 .experience-item {
-  border-left: 3px solid var(--accent);
-  padding-left: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.job-company {
+  margin: 0.3rem 0 0;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.current-role {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #cfe1ff;
+  border-radius: 999px;
+  background: #eaf3ff;
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.experience-summary {
+  margin: 0;
+  color: var(--muted);
+}
+
+.responsibilities-heading {
+  margin: 0.25rem 0 -0.45rem;
+  color: var(--primary-dark);
+  font-size: 0.95rem;
+}
+
+.responsibilities-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.responsibilities-list li {
+  position: relative;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.responsibilities-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 .job-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: 0.8rem;
 }
 
 .job-header h4 {
@@ -449,6 +533,24 @@ img {
 
   .profile-card {
     min-height: 320px;
+  }
+
+  .experience-timeline {
+    margin-left: 0.35rem;
+    padding-left: 1.5rem;
+  }
+
+  .timeline-marker {
+    left: -2.1rem;
+  }
+
+  .experience-card {
+    padding: 1.25rem;
+  }
+
+  .responsibilities-list {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
   }
 
   .profile-photo {
