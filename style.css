@@ -356,6 +356,20 @@ img {
   white-space: nowrap;
 }
 
+.employment-period {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #f5f8fd;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .experience-summary {
   margin: 0;
   color: var(--muted);
