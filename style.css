@@ -600,8 +600,8 @@ img {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.75rem 1.5rem;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
 }
 
 .skill-category h4 {
@@ -612,7 +612,7 @@ img {
 
 .skill-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.85rem;
 }
 
@@ -785,6 +785,10 @@ img {
   .contact-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .skill-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
@@ -809,7 +813,7 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .skills-grid {
+  .skill-list {
     grid-template-columns: 1fr;
   }
 
